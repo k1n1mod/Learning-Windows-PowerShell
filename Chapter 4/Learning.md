@@ -71,7 +71,7 @@ $ml = new-object MLClass.Messages
 $ml.SendMsg()
 $ml | Get-Member
 
-#Get-ChildItem
+# Get-ChildItem
 refer by its built-in aliases
     ls
     dir
@@ -80,3 +80,12 @@ In the folder to show all the other paths
 ```
 Get-ChildItem -recurse
 ```
+to find for example a .txt file
+gci c:\*.* -include *.txt
+
+# Pipeline
+$_ use to check the current status of the current contents of the pipeline at the particular point in time
+Get-Service | Where-Object {$_.DisplayName -match "MS"}
+
+# Tab Completion
+*-S complete all the stuff what starts with a s behind the -
