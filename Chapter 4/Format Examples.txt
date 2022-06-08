@@ -38,8 +38,8 @@ Get-Process -Name powershell | Format-Table -Wrap -Property Name,Id,Company,Path
 (The GroupBy parameter groups output based on a property value)
 Get-Process -Name powershell | Format-Table -Wrap -AutoSize -Property Name,Id,Path -GroupBy Company
 
-
-
+(The GroupBy parameter groups output based on a property value All Process GroupBy Company)
+Get-Process  | Format-Table -Wrap -AutoSize -Property Name,Id,Path -GroupBy Company
 
 
 
