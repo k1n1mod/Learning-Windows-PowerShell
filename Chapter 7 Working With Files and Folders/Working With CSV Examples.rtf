@@ -1,0 +1,11 @@
+
+Write data to csv
+==========================
+Get-Service
+Get-Service | Export-CSV C:\SvcList.csv
+
+Import data from csv
+=====================
+$s = Import-CSV C:\SvcList.csv
+Or
+Invoke-Item C:\SvcList.csv

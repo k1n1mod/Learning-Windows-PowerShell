@@ -1,0 +1,1 @@
+get-process | where-object {$_.WorkingSet -gt 50000000}
